@@ -1,71 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Zhentao Dong, Beijing Jiaotong University. Research in brain–computer interfaces, human–vehicle interaction, and intelligent transportation.">
-  <meta name="theme-color" content="#fcfcfa">
-  <title>Zhentao Dong · 董镇滔</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhentao Dong's homepage · 董镇滔</title>
+  <meta name="description" content="Zhentao Dong, Ph.D. student at Beijing Jiaotong University and CSC-supported visiting Ph.D. student at the University of Birmingham.">
   <link rel="canonical" href="https://user-dzt.github.io/">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Zhentao Dong's homepage">
+  <meta property="og:url" content="https://user-dzt.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script src="content.js" defer></script><script src="app.js" defer></script>
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content / 跳至正文</a>
-<header class="topbar"><div class="topbar-inner">
-  <a class="wordmark" href="#about" aria-label="Zhentao Dong home">ZD<span>.</span></a>
-  <nav aria-label="Main navigation"><a href="#about" data-t="navAbout">About</a><a href="#research" data-t="navResearch">Research</a><a href="#publications" data-t="navPapers">Publications</a><a href="#education" data-t="navEducation">Education</a><a href="#honors" data-t="navHonors">Honors</a></nav>
-  <button class="language" id="language" aria-label="切换为中文">中 / <strong>EN</strong></button>
-</div></header>
-<div class="layout">
-  <aside class="profile" aria-label="Personal profile">
-    <img class="portrait" src="assets/portrait.jpg" width="184" height="184" alt="Zhentao Dong / 董镇滔">
-    <h1>Zhentao Dong<span class="native-name">董镇滔</span></h1>
-    <p class="role" data-t="role">Ph.D. Student</p><p class="affiliation" data-t="affiliation">Beijing Jiaotong University</p>
-    <p class="department" data-t="department">Control Science and Engineering</p>
-    <div class="profile-links">
-      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg><span data-t="location">Beijing, China</span></span>
-      <a href="mailto:ztdong@bjtu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>ztdong@bjtu.edu.cn</a>
-      <a href="https://orcid.org/0009-0004-5957-943X" target="_blank" rel="noopener noreferrer"><span class="orcid">iD</span>ORCID <span aria-hidden="true">↗</span></a>
-      <a href="https://github.com/user-dzt" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-5 3 2-18"/></svg>GitHub <span aria-hidden="true">?</span></a>
+  <a class="skip-link" href="#about-me">Skip to content / 跳至正文</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <nav class="site-navigation" aria-label="Main navigation">
+        <a class="home-link" href="#about-me"><span class="home-symbol" aria-hidden="true">🌐</span> <span data-t="home">Home</span></a>
+        <a href="#news" data-t="navNews">News</a>
+        <a href="#publications" data-t="navPublications">Publications</a>
+        <a href="#honor" data-t="navHonor">Honor</a>
+        <a href="#intern" data-t="navIntern">Intern</a>
+        <a href="#service" data-t="navService">Service</a>
+      </nav>
+      <button class="language-button" id="language" type="button" aria-label="切换为中文">中文</button>
     </div>
-    <a class="contact-button" href="mailto:ztdong@bjtu.edu.cn"><span data-t="getInTouch">Get in touch</span><span aria-hidden="true">↗</span></a>
-    <p class="sidebar-note" data-t="sidebarNote">Human-centered intelligence.<br>Safer, smarter mobility.</p>
-  </aside>
-  <main id="main">
-    <section id="about" class="about">
-      <div class="eyebrow"><span class="dot"></span><span data-t="eyebrow">HUMAN · INTELLIGENCE · MOBILITY</span></div>
-      <h2 class="intro-title" data-t="headline">Understanding people.<br><span>Advancing mobility.</span></h2>
-      <p class="intro-text" data-t="bio">I am a Ph.D. student in Control Science and Engineering at <a href="https://www.bjtu.edu.cn/" target="_blank" rel="noopener noreferrer">Beijing Jiaotong University</a>. My research connects brain–computer interfaces, artificial intelligence, and transportation to better understand drivers and human–vehicle interaction.</p>
-      <p class="intro-text" data-t="bio2">I work with multimodal physiological signals, including EEG, to study driver states, driving behavior, and human acceptance of automated vehicles.</p>
-      <div class="interests"><span data-t="interest1">Brain–Computer Interfaces</span><span data-t="interest2">Human–Vehicle Interaction</span><span data-t="interest3">AI in Transportation</span></div>
-      <div class="welcome"><span aria-hidden="true">↗</span><p data-t="welcome">Interested in these topics? I welcome research discussions and opportunities to collaborate.</p></div>
-    </section>
-    <section id="research">
-      <div class="section-heading"><h2 data-t="researchTitle">Research interests</h2><span class="section-number">01</span></div>
-      <div class="research-row"><span class="research-index">01</span><div><h3 data-t="r1Title">Brain–computer interfaces & driver cognition</h3><p data-t="r1Text">Using EEG and multimodal physiological signals to investigate driver states, cognitive processes, and driving behavior.</p></div><svg class="research-art" viewBox="0 0 130 60" aria-hidden="true"><path class="art-guide" d="M0 30h130"/><path d="m0 30 12 0 5-8 8 17 8-31 8 45 8-29 7 6 12 0 6-10 7 17 8-10 11 3h20"/></svg></div>
-      <div class="research-row"><span class="research-index">02</span><div><h3 data-t="r2Title">Human–vehicle interaction</h3><p data-t="r2Text">Understanding distraction, fatigue, and human acceptance of automated driving through data collected in real driving environments.</p></div><svg class="research-art" viewBox="0 0 130 60" aria-hidden="true"><circle cx="24" cy="30" r="13"/><path d="M43 30h32m-7-6 7 6-7 6m16-4 5-14h22l7 14v10H84ZM90 42v5m22-5v5m-23-15h24"/></svg></div>
-      <div class="research-row"><span class="research-index">03</span><div><h3 data-t="r3Title">Intelligent & automated transportation</h3><p data-t="r3Text">Exploring driving behavior prediction and autonomous driving planning with machine learning and multimodal information.</p></div><svg class="research-art" viewBox="0 0 130 60" aria-hidden="true"><path d="m10 48 25-30 28 24 25-29 31 20M35 18l53-5M63 42l56-9"/><circle cx="10" cy="48" r="4"/><circle cx="35" cy="18" r="4"/><circle cx="63" cy="42" r="4"/><circle cx="88" cy="13" r="4"/><circle cx="119" cy="33" r="4"/></svg></div>
-    </section>
-    <section id="publications">
-      <div class="section-heading"><h2 data-t="papersTitle">Selected publications</h2><span class="section-number">02</span></div>
-      <div class="paper-toolbar"><p data-t="paperNote">Journal articles & conference proceedings</p><div class="filters" aria-label="Publication year"><button class="active" data-year="all" aria-pressed="true" data-t="allYears">All</button><button data-year="2026" aria-pressed="false">2026</button><button data-year="2025" aria-pressed="false">2025</button><button data-year="2024" aria-pressed="false">2024</button></div></div>
-      <div id="paper-list" aria-live="polite"></div>
-      <button class="show-papers" id="show-papers" aria-expanded="false" data-t="showAll">View all publications <span aria-hidden="true">↓</span></button>
-    </section>
-    <section id="education">
-      <div class="section-heading"><h2 data-t="educationTitle">Education</h2><span class="section-number">03</span></div>
-      <div class="education-row"><div class="school-monogram">BJTU</div><div><h3 data-t="bjtu">Beijing Jiaotong University</h3><p data-t="phd">Ph.D. · Control Science and Engineering</p><p class="muted" data-t="phdNote">Master–Ph.D. Program</p></div><time data-t="phdDate">2024 — Present</time></div>
-      <div class="education-row"><div class="school-monogram">BJTU</div><div><h3 data-t="bjtu">Beijing Jiaotong University</h3><p data-t="master">Master's studies · Transportation Planning and Management</p></div><time>2023 — 2024</time></div>
-      <div class="education-row"><div class="school-monogram secondary">CHD</div><div><h3 data-t="changan">Chang'an University</h3><p data-t="bachelor">B.Eng. · Transportation Engineering</p></div><time>2019 — 2023</time></div>
-    </section>
-    <section id="honors">
-      <div class="section-heading"><h2 data-t="honorsTitle">Honors & awards</h2><span class="section-number">04</span></div>
-      <div class="honor-row"><span data-t="honor1">National Scholarship, Ministry of Education, China</span><time>2020</time></div>
-      <div class="honor-row"><span data-t="honor2">Outstanding Graduate, Chang'an University</span><time>2023</time></div>
-      <div class="honor-row"><span data-t="honor3">Excellent Thesis, Chang'an University</span><time>2023</time></div>
-    </section>
-    <footer><p>© <span id="copyright-year">2026</span> Zhentao Dong <span class="footer-separator">/</span> <span data-t="footer">Built with curiosity.</span></p><a href="#about" data-t="backTop">Back to top ↑</a></footer>
-  </main>
-</div>
-</body></html>
+  </header>
+  <div class="page-layout">
+    <aside class="sidebar" aria-label="Personal profile">
+      <div class="profile-top">
+        <img class="author-avatar" src="portrait.jpg" alt="Zhentao Dong / 董镇滔" width="175" height="175">
+        <div class="author-content">
+          <h1 class="author-name" data-t="authorName">Zhentao Dong</h1>
+          <p class="author-bio" data-t="affiliation">Beijing Jiaotong University<br>University of Birmingham (visiting)</p>
+        </div>
+      </div>
+      <ul class="author-links">
+        <li class="author-position" data-t="position">Ph.D. student in Control Science and Engineering</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg><span data-t="location">Birmingham, United Kingdom</span></li>
+        <li><a href="mailto:ztdong@bjtu.edu.cn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>ztdong@bjtu.edu.cn</a></li>
+        <li><a href="https://github.com/user-dzt" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1-4-2-6-2m12 4v-4c0-1 .1-1.5-.5-2 3-.3 6-1.5 6-6a5 5 0 0 0-1.3-3.5c.1-.4.6-2-.2-3.5 0 0-1.2-.4-3.8 1.3a13 13 0 0 0-7 0C5.5 1.6 4.3 2 4.3 2c-.8 1.5-.3 3.1-.2 3.5A5 5 0 0 0 2.8 9c0 4.5 3 5.7 6 6-.5.5-.6 1-.6 2v4"/></svg>Github</a></li>
+        <li><a href="https://orcid.org/0009-0004-5957-943X" target="_blank" rel="noopener noreferrer"><span class="orcid-icon" aria-hidden="true">iD</span>ORCID</a></li>
+      </ul>
+    </aside>
+    <main class="page-content" id="about-me">
+      <section class="introduction" aria-label="About">
+        <p data-t="introduction"><strong>Working Experience and Education</strong>: I am a Ph.D. student in Control Science and Engineering at <a href="https://www.bjtu.edu.cn/" target="_blank" rel="noopener noreferrer">Beijing Jiaotong University</a> (BJTU). I am currently a visiting Ph.D. student at the <a href="https://www.birmingham.ac.uk/" target="_blank" rel="noopener noreferrer">University of Birmingham</a>, United Kingdom, on a one-year joint-training program supported by the China Scholarship Council (CSC). I received my Bachelor's degree in Transportation Engineering from <a href="https://www.chd.edu.cn/" target="_blank" rel="noopener noreferrer">Chang'an University</a> in 2023.</p>
+        <p data-t="interests"><strong>Research Interests</strong>: Brain–computer interfaces and intelligent transportation, including:<br>● Brain–Computer Interfaces<br>● Human–Vehicle Interaction<br>● AI in Transportation<br>● Automated Vehicles</p>
+        <p data-t="invitation">My research uses EEG and multimodal physiological signals to investigate driver states, driving behavior, and human acceptance of automated vehicles. Please feel free to communicate and cooperate via <a href="mailto:ztdong@bjtu.edu.cn">email</a>.</p>
+      </section>
+      <section id="education">
+        <h2 class="section-title" data-t="educationTitle">📖 Educations</h2>
+        <div class="education-row">
+          <a class="university-logo institution-name" href="https://www.birmingham.ac.uk/" target="_blank" rel="noopener noreferrer" aria-label="University of Birmingham">UNIVERSITY OF<br><strong>BIRMINGHAM</strong></a>
+          <div data-t="educationBirmingham"><strong>University of Birmingham, United Kingdom</strong><br>Visiting Ph.D. Student · One-year joint-training program<br>Supported by the China Scholarship Council (CSC)<br>Currently in progress</div>
+        </div>
+        <div class="education-row">
+          <a class="university-logo bjtu-logo" href="https://www.bjtu.edu.cn/" target="_blank" rel="noopener noreferrer" aria-label="Beijing Jiaotong University"><img class="bjtu-badge" src="bjtu-badge.png" alt=""><img class="bjtu-name" src="bjtu-name.png" alt="Beijing Jiaotong University"></a>
+          <div data-t="educationBjtu"><strong>Beijing Jiaotong University, China</strong><br>Ph.D. in Control Science and Engineering<br>Aug. 2024 – Present<br>Master's studies in Transportation Planning and Management<br>Aug. 2023 – Aug. 2024</div>
+        </div>
+        <div class="education-row">
+          <a class="university-logo" href="https://www.chd.edu.cn/" target="_blank" rel="noopener noreferrer"><img src="changan.jpg" alt="Chang'an University"></a>
+          <div data-t="educationChangan"><strong>Chang'an University, China</strong><br>Bachelor of Engineering in Transportation Engineering<br>Aug. 2019 – Jun. 2023</div>
+        </div>
+      </section>
+      <section id="news">
+        <h2 class="section-title" data-t="newsTitle">🔥 News</h2>
+        <p class="news-list" data-t="news">● <em>2026</em>: A paper on context-aware driver distraction recognition published in <strong>Expert Systems with Applications</strong>.<br>● <em>2026</em>: A paper on human acceptance of autonomous driving styles published in <strong>IEEE Transactions on Human-Machine Systems</strong>.<br>● <em>2026</em>: A coauthored paper on logistics facility relocation published in <strong>Transportation Research Part E</strong>.<br>● <em>2025</em>: A paper on multimodal emotional features published in <strong>Journal of Zhejiang University (Engineering Science)</strong>.<br>● <em>2024</em>: Started Ph.D. studies in Control Science and Engineering at <strong>Beijing Jiaotong University</strong>.</p>
+      </section>
+      <section id="publications">
+        <h2 class="section-title" data-t="publicationsTitle">📝 Selected Publications</h2>
+        <p class="publication-note" data-t="publicationNote">† denotes corresponding author</p>
+        <div id="selected-publications"><!-- SELECTED_PUBLICATIONS -->
+<article class="paper-box"><div class="paper-image"><div><div class="badge">ESWA 2026</div><img src="paper-eswa.svg" alt="Typographic cover: Adaptive driver distraction recognition in mixed manual–automated on-road driving via a context-aware framework." width="400" height="240" loading="lazy"></div></div><div class="paper-text"><ul><li class="authors"><strong>Dong, Z.</strong>, Qi, G.<sup>†</sup>, Hao, Y., Zheng, S.-T., Jiang, R., Guan, W.<sup>†</sup></li><li>Adaptive driver distraction recognition in mixed manual–automated on-road driving via a context-aware framework. (<em>Expert Systems with Applications</em>, 2026)</li><li><a href="https://doi.org/10.1016/j.eswa.2026.133093" target="_blank" rel="noopener noreferrer">[paper]</a></li></ul></div></article>
+<article class="paper-box"><div class="paper-image"><div><div class="badge">THMS 2026</div><img src="paper-thms.svg" alt="Typographic cover: Human–machine fitness while driving: Evaluating human acceptance of autonomous driving styles through EEG signal analysis." width="400" height="240" loading="lazy"></div></div><div class="paper-text"><ul><li class="authors">Qi, G., <strong>Dong, Z.</strong><sup>†</sup>, Guan, W.<sup>†</sup>, Huang, A., An, Y.</li><li>Human–machine fitness while driving: Evaluating human acceptance of autonomous driving styles through EEG signal analysis. (<em>IEEE Transactions on Human-Machine Systems</em>, 2026)</li><li><a href="https://doi.org/10.1109/THMS.2026.3676889" target="_blank" rel="noopener noreferrer">[paper]</a></li></ul></div></article>
+<article class="paper-box"><div class="paper-image"><div><div class="badge">JZJU 2025</div><img src="paper-jzju.svg" alt="Typographic cover: Multimodal emotional feature analysis based on short video resources of traffic incidents." width="400" height="240" loading="lazy"></div></div><div class="paper-text"><ul><li class="authors"><strong>Dong, Z.</strong>, Xu, K., Wan, Q., Liu, X., Shen, H., Li, S., Qi, G.<sup>†</sup></li><li>Multimodal emotional feature analysis based on short video resources of traffic incidents. (<em>Journal of Zhejiang University (Engineering Science)</em>, 2025)</li><li><a href="https://doi.org/10.3785/j.issn.1008-973X.2025.04.001" target="_blank" rel="noopener noreferrer">[paper]</a></li></ul></div></article>
+<!-- END_SELECTED_PUBLICATIONS --></div>
+        <details class="full-publications" id="full-publications">
+          <summary><span data-t="fullListButton">📚 Full Publication List</span></summary>
+          <div class="complete-list">
+            <h3 data-t="completeTitle">📖 Complete Publications</h3>
+            <!-- COMPLETE_PUBLICATIONS -->
+<section class="publication-year"><h4>🎯 2026</h4><ul><li><strong>Dong, Z.</strong>, Qi, G.<sup>†</sup>, Hao, Y., Zheng, S.-T., Jiang, R., Guan, W.<sup>†</sup>, <a href="https://doi.org/10.1016/j.eswa.2026.133093" target="_blank" rel="noopener noreferrer">Adaptive driver distraction recognition in mixed manual–automated on-road driving via a context-aware framework.</a> <em>Expert Systems with Applications</em>, 330, 133093, 2026.</li><li>Qi, G., <strong>Dong, Z.</strong><sup>†</sup>, Guan, W.<sup>†</sup>, Huang, A., An, Y., <a href="https://doi.org/10.1109/THMS.2026.3676889" target="_blank" rel="noopener noreferrer">Human–machine fitness while driving: Evaluating human acceptance of autonomous driving styles through EEG signal analysis.</a> <em>IEEE Transactions on Human-Machine Systems</em>, 56(3), 636–649, 2026.</li><li>Tang, X., Wei, Z., Liu, Z., <strong>Dong, Z.</strong>, Huang, H., Li, B.<sup>†</sup>, <a href="https://doi.org/10.1016/j.tre.2026.104961" target="_blank" rel="noopener noreferrer">Spatial relocation of logistics facilities in Beijing, China: Decoupling the influencing factors and unveiling the role of policy.</a> <em>Transportation Research Part E: Logistics and Transportation Review</em>, 212, 104961, 2026.</li></ul></section>
+<section class="publication-year"><h4>🎯 2025</h4><ul><li><strong>Dong, Z.</strong>, Xu, K., Wan, Q., Liu, X., Shen, H., Li, S., Qi, G.<sup>†</sup>, <a href="https://doi.org/10.3785/j.issn.1008-973X.2025.04.001" target="_blank" rel="noopener noreferrer">Multimodal emotional feature analysis based on short video resources of traffic incidents.</a> <em>Journal of Zhejiang University (Engineering Science)</em>, 59(4), 661–668, 2025 [In Chinese].</li></ul></section>
+<section class="publication-year"><h4>🎯 2024</h4><ul><li><strong>Dong, Z.</strong>, Qi, G., Guan, W., Shang, S., <a href="https://doi.org/10.26914/c.cnkihy.2024.011593" target="_blank" rel="noopener noreferrer">EEG feature mining and analysis for driving behavior tracing.</a> <em>Proceedings of the 2024 World Transport Convention</em>, 346–353, 2024 [In Chinese].</li></ul></section>
+<!-- END_COMPLETE_PUBLICATIONS -->
+          </div>
+        </details>
+      </section>
+      <section id="honor">
+        <h2 class="section-title" data-t="honorTitle">🏅 Honor</h2>
+        <ul class="honor-list" data-t="honors"><li><em>2023</em>: 🏅 Outstanding Graduate, Chang'an University</li><li><em>2023</em>: 🏅 Excellent Thesis, Chang'an University</li><li><em>2020</em>: 🏅 National Scholarship, Ministry of Education, China</li></ul>
+      </section>
+      <section id="intern">
+        <h2 class="section-title" data-t="internTitle">💻 Intern</h2>
+        <div class="education-row">
+          <div class="university-logo institution-name" data-t="employerName">China Telecom<br>Tianyi Transportation</div>
+          <div data-t="internText"><strong>Tianyi Transportation, China Telecom</strong><br>Autonomous Driving Algorithm Intern</div>
+        </div>
+      </section>
+      <section id="service">
+        <h2 class="section-title" data-t="serviceTitle">🖋️ Service</h2>
+        <div data-t="serviceText"><ul class="service-list"><li>Journal Reviewer:<ul><li><a href="https://ieee-itss.org/pub/t-iv/" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Vehicles (T-IV)</a></li><li><a href="https://ieee-itss.org/pub/oj-its/" target="_blank" rel="noopener noreferrer">IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS)</a></li></ul></li></ul></div>
+      </section>
+      <footer class="page-footer"><span>© <span id="year">2026</span> Zhentao Dong</span><a href="#about-me" data-t="backTop">Back to top ↑</a></footer>
+    </main>
+  </div>
+</body>
+</html>
