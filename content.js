@@ -2,6 +2,7 @@
 window.HOMEPAGE = {
   translations: {
     en: {
+      fundedProjectTitle:'Fundamental Research Funds for the Central Universities',fundedProjectPeriod:'2026–2028',fundedProjectText:'<strong>Principal Investigator</strong> · Funding: <strong>RMB 30,000</strong>',
       authorName:'Zhentao Dong',home:'Home',navNews:'News',navResearch:'Research',navPublications:'Publications',navHonor:'Honor',navIntern:'Intern',navService:'Service',
       affiliation:'Beijing Jiaotong University<br>University of Birmingham (visiting)',position:'Ph.D. student · Integrated Master–Ph.D. Program',location:'Birmingham, United Kingdom',
       introduction:'<strong>Working Experience and Education</strong>: I am a Ph.D. student in Control Science and Engineering in the integrated Master–Ph.D. program at <a href="https://www.bjtu.edu.cn/" target="_blank" rel="noopener noreferrer">Beijing Jiaotong University</a> (BJTU). I am currently a visiting Ph.D. student at the <a href="https://www.birmingham.ac.uk/" target="_blank" rel="noopener noreferrer">University of Birmingham</a>, United Kingdom, on a one-year joint-training program supported by the China Scholarship Council (CSC). I received my Bachelor\'s degree in Transportation Engineering from <a href="https://www.chd.edu.cn/" target="_blank" rel="noopener noreferrer">Chang\'an University</a> in 2023.',
@@ -15,6 +16,7 @@ window.HOMEPAGE = {
       internTitle:'💻 Intern',employerName:'Tianyi Transportation Technology',internText:'<strong><a href="https://www.tyjt-ai.com/" target="_blank" rel="noopener noreferrer">Tianyi Transportation Technology (天翼交通科技有限公司)</a></strong><br>Autonomous Driving Algorithm Intern',serviceTitle:'🖋️ Service',serviceText:'<ul class="service-list"><li>Journal Reviewer:<ul><li><a href="https://ieee-itss.org/pub/t-iv/" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Vehicles (T-IV)</a></li><li><a href="https://ieee-itss.org/pub/oj-its/" target="_blank" rel="noopener noreferrer">IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS)</a></li></ul></li></ul>',backTop:'Back to top ↑'
     },
     zh: {
+      fundedProjectTitle:'中央高校基本科研业务费项目',fundedProjectPeriod:'2026–2028',fundedProjectText:'<strong>主持</strong> · 经费：<strong>人民币 3 万元</strong>',
       authorName:'董镇滔',home:'首页',navNews:'最新动态',navResearch:'科研经历',navPublications:'论文发表',navHonor:'荣誉奖励',navIntern:'实习经历',navService:'学术服务',
       affiliation:'北京交通大学<br>英国伯明翰大学（联合培养）',position:'控制科学与工程专业博士研究生 · 硕博连读',location:'英国，伯明翰',
       introduction:'<strong>学习与研究经历</strong>：我目前是<a href="https://www.bjtu.edu.cn/" target="_blank" rel="noopener noreferrer">北京交通大学</a>控制科学与工程专业硕博连读博士研究生，正在国家留学基金管理委员会（CSC）支持下，于<a href="https://www.birmingham.ac.uk/" target="_blank" rel="noopener noreferrer">英国伯明翰大学</a>进行为期一年的博士联合培养。我于 2023 年获得<a href="https://www.chd.edu.cn/" target="_blank" rel="noopener noreferrer">长安大学</a>交通工程专业工学学士学位。',
