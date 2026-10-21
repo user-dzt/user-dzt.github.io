@@ -29,5 +29,12 @@ function replaceBlock(name,value){
 }
 replaceBlock('SELECTED_PUBLICATIONS',selectedHTML);
 replaceBlock('COMPLETE_PUBLICATIONS',allHTML);
+// Each data-t wrapper has no nested element of its own tag type.
+// Keep the default English HTML in sync with the bilingual content file.
+html=html.replace(/<([a-z][\w-]*)(\s[^>]*\bdata-t="([^"]+)"[^>]*)>[\s\S]*?<\/\1>/g,(match,tag,attrs,key)=>{
+  const value=data.translations.en[key];
+  if(value===undefined)throw Error('Missing English text: '+key);
+  return '<'+tag+attrs+'>'+value+'</'+tag+'>';
+});
 fs.writeFileSync(path.join(__dirname,'index.html'),html,'utf8');
 console.log('Built '+data.publications.filter(p=>p.selected).length+' selected papers, '+data.publications.length+' complete records, and publication title covers.');
