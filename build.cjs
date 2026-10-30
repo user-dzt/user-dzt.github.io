@@ -39,8 +39,11 @@ function replaceBlock(name,value){
 }
 replaceBlock('SELECTED_PUBLICATIONS',selectedHTML);
 replaceBlock('COMPLETE_PUBLICATIONS',allHTML);
-const underReviewHTML=(data.underReview||[]).map(p=>'<li><div>'+escape(p.title)+'</div><div class="authors">'+authors(p)+' · <em>Under Review</em></div></li>').join('\n');
-replaceBlock('UNDER_REVIEW',underReviewHTML);
+// underReview holds every unpublished manuscript; status 'submitted' moves one to the Submitted list.
+const manuscript=label=>p=>'<li><div>'+escape(p.title)+'</div><div class="authors">'+authors(p)+' · <em>'+label+'</em></div></li>';
+const isSubmitted=p=>p.status==='submitted';
+replaceBlock('UNDER_REVIEW',(data.underReview||[]).filter(p=>!isSubmitted(p)).map(manuscript('Under Review')).join('\n'));
+replaceBlock('SUBMITTED',(data.underReview||[]).filter(isSubmitted).map(manuscript('Submitted')).join('\n'));
 // Each data-t wrapper has no nested element of its own tag type.
 // Keep the default English HTML in sync with the bilingual content file.
 html=html.replace(/<([a-z][\w-]*)(\s[^>]*\bdata-t="([^"]+)"[^>]*)>[\s\S]*?<\/\1>/g,(match,tag,attrs,key)=>{
