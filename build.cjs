@@ -1,4 +1,5 @@
-/* Optional, dependency-free rebuild after editing publication records. */
+/* Optional, dependency-free rebuild after editing publication records.
+   主页编辑器.html generates the same output in the browser; keep the two in step. */
 const fs=require('node:fs');
 const path=require('node:path');
 global.window={};
@@ -8,16 +9,25 @@ const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 function authors(p){
   return p.authors.map((a,i)=>(a==='Dong, Z.'?'<strong>'+escape(a)+'</strong>':escape(a))+((p.corresponding||[]).includes(i)?'<sup>†</sup>':'')).join(', ');
 }
+// Papers without a DOI may give a plain url instead.
+const paperLink=p=>p.doi?'https://doi.org/'+p.doi:(p.url||'');
+const hasTextCover=p=>Array.isArray(p.coverLines)&&p.coverLines.length>0;
 function cover(p){
   const lines=p.coverLines.map((line,i)=>'<text x="27" y="'+(92+i*34)+'" font-family="Arial,sans-serif" font-size="25" fill="#34485f">'+escape(line)+'</text>').join('');
   return '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240"><title>Typographic cover: '+escape(p.title)+'</title><rect width="400" height="240" fill="#fff"/><rect x="0.5" y="0.5" width="399" height="239" fill="none" stroke="#d9e1e8"/><path d="M27 52h346" stroke="#c5ced8"/>'+lines+'<text x="27" y="213" font-family="Arial,sans-serif" font-size="12" fill="#7c8794">'+escape(p.short+' · '+p.year+' · Zhentao Dong')+'</text></svg>';
 }
 function selected(p){
-  return '<article class="paper-box"><div class="paper-image"><div><div class="badge">'+escape(p.short+' '+p.year)+'</div><img src="'+escape(p.cover)+'" alt="Typographic cover: '+escape(p.title)+'" width="280" height="168" loading="lazy"></div></div><div class="paper-text"><ul><li class="authors">'+authors(p)+'</li><li>'+escape(p.title)+' (<em>'+escape(p.journal)+'</em>, '+escape(p.year)+')</li><li><a href="https://doi.org/'+escape(p.doi)+'" target="_blank" rel="noopener noreferrer">[paper]</a></li></ul></div></article>';
+  const link=paperLink(p);
+  return '<article class="paper-box"><div class="paper-image"><div><div class="badge">'+escape(p.short+' '+p.year)+'</div><img src="'+escape(p.cover)+'" alt="'+(hasTextCover(p)?'Typographic cover: ':'Figure: ')+escape(p.title)+'" width="280" height="168" loading="lazy"></div></div><div class="paper-text"><ul><li class="authors">'+authors(p)+'</li><li>'+escape(p.title)+' (<em>'+escape(p.journal)+'</em>, '+escape(p.year)+')</li>'+(link?'<li><a href="'+escape(link)+'" target="_blank" rel="noopener noreferrer">[paper]</a></li>':'')+'</ul></div></article>';
 }
-const selectedHTML=data.publications.filter(p=>p.selected).map(p=>{fs.writeFileSync(path.join(__dirname,p.cover),cover(p),'utf8');return selected(p)}).join('\n');
+function listed(p){
+  const link=paperLink(p);
+  const title=link?'<a href="'+escape(link)+'" target="_blank" rel="noopener noreferrer">'+escape(p.title)+'</a>':escape(p.title);
+  return '<li>'+authors(p)+', '+title+' <em>'+escape(p.journal)+'</em>, '+(p.details?escape(p.details)+', ':'')+escape(p.year)+(p.chinese?' [In Chinese]':'')+'.</li>';
+}
+const selectedHTML=data.publications.filter(p=>p.selected).map(p=>{if(hasTextCover(p))fs.writeFileSync(path.join(__dirname,p.cover),cover(p),'utf8');return selected(p)}).join('\n');
 const years=[...new Set(data.publications.map(p=>p.year))].sort().reverse();
-const allHTML=years.map(year=>'<section class="publication-year"><h4>🎯 '+escape(year)+'</h4><ul>'+data.publications.filter(p=>p.year===year).map(p=>'<li>'+authors(p)+', <a href="https://doi.org/'+escape(p.doi)+'" target="_blank" rel="noopener noreferrer">'+escape(p.title)+'</a> <em>'+escape(p.journal)+'</em>, '+escape(p.details)+', '+escape(p.year)+(p.chinese?' [In Chinese]':'')+'.</li>').join('')+'</ul></section>').join('\n');
+const allHTML=years.map(year=>'<section class="publication-year"><h4>🎯 '+escape(year)+'</h4><ul>'+data.publications.filter(p=>p.year===year).map(listed).join('')+'</ul></section>').join('\n');
 let html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
 function replaceBlock(name,value){
   const start='<!-- '+name+' -->',end='<!-- END_'+name+' -->';
