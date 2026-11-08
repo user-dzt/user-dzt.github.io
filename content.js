@@ -31,7 +31,7 @@ window.HOMEPAGE = {
       experimentTitle:'On-road driving experiment &amp; multimodal dataset',
       experimentText:'<ul><li>Designed and conducted a real-vehicle car-following experiment involving <strong>43 drivers</strong>, covering manual driving and automated assistance.</li><li>Collected multimodal physiological and behavioral data, including EEG, EMG, ECG, PPG, eye tracking, video, and driving records.</li><li>Carried out data processing, dataset preparation, and driving behavior prediction modeling.</li></ul>',
       newsTitle:'🔥 News',
-      news:'<li><em>2026-11: I received the Best Student Poster award in Advancing Automotive Engineering 2026 held by Institution of Mechanical Engineers. </em></li><li><em>2026-09</em>: A first-author paper was accepted by the 106th Transportation Research Board Annual Meeting.</li><li><em>2026-06</em>: A first-author paper on context-aware driver distraction recognition was accepted by <strong>Expert Systems with Applications</strong>.</li>',
+      news:'<li><em>2026-11: </em>I received the Best Student Poster award in Advancing Automotive Engineering 2026 held by Institution of Mechanical Engineers. </li><li><em>2026-09</em>: A first-author paper was accepted by the 106th Transportation Research Board Annual Meeting.</li><li><em>2026-06</em>: A first-author paper on context-aware driver distraction recognition was accepted by <strong>Expert Systems with Applications</strong>.</li>',
       publicationsTitle:'📝 Selected Publications',
       publicationNote:'† denotes corresponding author',
       fullListButton:'📚 Full Publication List',
