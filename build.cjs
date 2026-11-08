@@ -41,11 +41,14 @@ function replaceBlock(name,value){
 }
 replaceBlock('SELECTED_PUBLICATIONS',selectedHTML);
 replaceBlock('COMPLETE_PUBLICATIONS',allHTML);
-// underReview holds every unpublished manuscript; status 'submitted' moves one to the Submitted list.
+// underReview holds every unpublished manuscript; status 'submitted' / 'preparation' moves one to
+// the Submitted / In Preparation list, no status means Under Review.
 const manuscript=label=>p=>'<li><div>'+escape(p.title)+'</div><div class="authors">'+authors(p)+' · <em>'+label+'</em></div></li>';
-const isSubmitted=p=>p.status==='submitted';
-replaceBlock('UNDER_REVIEW',(data.underReview||[]).filter(p=>!isSubmitted(p)).map(manuscript('Under Review')).join('\n'));
-replaceBlock('SUBMITTED',(data.underReview||[]).filter(isSubmitted).map(manuscript('Submitted')).join('\n'));
+const statusOf=p=>p.status==='submitted'||p.status==='preparation'?p.status:'review';
+const manuscripts=(status,label)=>(data.underReview||[]).filter(p=>statusOf(p)===status).map(manuscript(label)).join('\n');
+replaceBlock('UNDER_REVIEW',manuscripts('review','Under Review'));
+replaceBlock('SUBMITTED',manuscripts('submitted','Submitted'));
+replaceBlock('IN_PREPARATION',manuscripts('preparation','In Preparation'));
 // Each data-t wrapper has no nested element of its own tag type.
 // Keep the default English HTML in sync with the bilingual content file.
 html=html.replace(/<([a-z][\w-]*)(\s[^>]*\bdata-t="([^"]+)"[^>]*)>[\s\S]*?<\/\1>/g,(match,tag,attrs,key)=>{
