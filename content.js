@@ -31,7 +31,7 @@ window.HOMEPAGE = {
       experimentTitle:'On-road driving experiment &amp; multimodal dataset',
       experimentText:'<ul><li>Designed and conducted a real-vehicle car-following experiment involving <strong>43 drivers</strong>, covering manual driving and automated assistance.</li><li>Collected multimodal physiological and behavioral data, including EEG, EMG, ECG, PPG, eye tracking, video, and driving records.</li><li>Carried out data processing, dataset preparation, and driving behavior prediction modeling.</li></ul>',
       newsTitle:'🔥 News',
-      news:'<li><em>2026</em>: A first-author paper was accepted by the 106th TRB Annual Meeting.</li><li><em>2026</em>: A first-author paper on context-aware driver distraction recognition was accepted by <strong>Expert Systems with Applications</strong>.</li>',
+      news:'<li><em>2026-11: I received the Best Student Poster award in Advancing Automotive Engineering 2026 held by Institution of Mechanical Engineers. </em></li><li><em>2026-09</em>: A first-author paper was accepted by the 106th Transportation Research Board Annual Meeting.</li><li><em>2026-06</em>: A first-author paper on context-aware driver distraction recognition was accepted by <strong>Expert Systems with Applications</strong>.</li>',
       publicationsTitle:'📝 Selected Publications',
       publicationNote:'† denotes corresponding author',
       fullListButton:'📚 Full Publication List',
@@ -39,19 +39,18 @@ window.HOMEPAGE = {
       underReviewTitle:'Under Review',
       submittedTitle:'Submitted',
       honorTitle:'🏅 Honors and Awards',
-      honors:'<li><em>2026</em>: 🏅 Merit Graduate Student, Beijing Jiaotong University</li><li><em>2023</em>: 🏅 Outstanding Graduate, Chang\'an University</li><li><em>2023</em>: 🏅 Excellent Thesis, Chang\'an University</li><li><em>2020</em>: 🏅 National Scholarship, Ministry of Education, China</li>',
+      honors:'<li><em>2026-11: </em>🏅<em> </em>Best Student Poster, Advancing Automotive Engineering 2026, Institution of Mechanical Engineers.</li><li><em>2026-10</em>: 🏅 Merit Graduate Student, Beijing Jiaotong University</li><li><em>2023-06</em>: 🏅 Outstanding Graduate, Chang\'an University</li><li><em>2023-06</em>: 🏅 Excellent Thesis, Chang\'an University</li><li><em>2020-12</em>: 🏅 National Scholarship, Ministry of Education, China</li>',
       internTitle:'💻 Internships',
       internText:'<strong><a href="https://www.tyjt-ai.com/" target="_blank" rel="noopener noreferrer">Tianyi Transportation Technology (天翼交通科技有限公司)</a></strong><br>Autonomous Driving Algorithm Intern',
       serviceTitle:'🖋️ Service',
       serviceText:'<ul class="service-list"><li>Journal Reviewer:<ul><li><a href="https://ieee-itss.org/pub/t-iv/" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Vehicles (T-IV)</a></li><li><a href="https://ieee-itss.org/pub/oj-its/" target="_blank" rel="noopener noreferrer">IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS)</a></li><li>IEEE Transactions on Human-Machine Systems (THMS)</li></ul></li></ul>',
-      backTop:'Back to top ↑',
-      preparationTitle:'In Preparation'
+      backTop:'Back to top ↑'
     }
   },
   underReview: [
     {title:'Drift-aware few-shot EEG calibration for cognitive distraction detection after the transition to automated driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Xu H.','Jiang R.','Guan W.','Li J.'],corresponding:[],status:'submitted'},
-    {title:'Islands in the sky: corridor buffers, percolation and crossing gates in China’s permission-free drone airspace',authors:['Dong Z.','et al.'],corresponding:[],status:'preparation'},
-    {title:'Mobility-based predictions overestimate road crashes when vehicle use falls and underestimate them when travel risk rises',authors:['Dong Z.','et al.'],corresponding:[],status:'preparation'},
+    {title:'Islands in the sky: corridor buffers, percolation and crossing gates in China’s permission-free drone airspace',authors:['Dong Z.','et al.'],corresponding:[],status:'submitted'},
+    {title:'Mobility-based predictions overestimate road crashes when vehicle use falls and underestimate them when travel risk rises',authors:['Dong Z.','et al.'],corresponding:[],status:'submitted'},
     {title:'EEG-informed Distraction-aware Car-following Simulation of Mixed Human-driven and Automated Traffic',authors:['Dong Z.','Qi G.','Zheng S.-T.','Li J.','Xu H.','Jiang R.','Guan W.'],corresponding:[],status:'submitted'},
     {title:'EASTF-Net: EEG-Anchored Spectral–Temporal Fusion for Driver-State Recognition Across Manual and Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Jiang R.','Guan W.','He Z.'],corresponding:[1,4]},
     {title:'From Coarse Distraction Detection to Mode-Aware Driver-State Recognition: Multimodal Physiological Evidence from Real-World Manual and Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Jiang R.','Guan W.'],corresponding:[1,4]},
