@@ -44,13 +44,14 @@ window.HOMEPAGE = {
       internText:'<strong><a href="https://www.tyjt-ai.com/" target="_blank" rel="noopener noreferrer">Tianyi Transportation Technology (天翼交通科技有限公司)</a></strong><br>Autonomous Driving Algorithm Intern',
       serviceTitle:'🖋️ Service',
       serviceText:'<ul class="service-list"><li>Journal Reviewer:<ul><li><a href="https://ieee-itss.org/pub/t-iv/" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Vehicles (T-IV)</a></li><li><a href="https://ieee-itss.org/pub/oj-its/" target="_blank" rel="noopener noreferrer">IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS)</a></li><li>IEEE Transactions on Human-Machine Systems (THMS)</li></ul></li></ul>',
-      backTop:'Back to top ↑'
+      backTop:'Back to top ↑',
+      preparationTitle:'In Preparation'
     }
   },
   underReview: [
     {title:'Drift-aware few-shot EEG calibration for cognitive distraction detection after the transition to automated driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Xu H.','Jiang R.','Guan W.','Li J.'],corresponding:[],status:'submitted'},
-    {title:'Islands in the sky: corridor buffers, percolation and crossing gates in China’s permission-free drone airspace',authors:['Dong Z.','et al.'],corresponding:[],status:'submitted'},
-    {title:'Mobility-based predictions overestimate road crashes when vehicle use falls and underestimate them when travel risk rises',authors:['Dong Z.','et al.'],corresponding:[],status:'submitted'},
+    {title:'Islands in the sky: corridor buffers, percolation and crossing gates in China’s permission-free drone airspace',authors:['Dong Z.','et al.'],corresponding:[],status:'preparation'},
+    {title:'Mobility-based predictions overestimate road crashes when vehicle use falls and underestimate them when travel risk rises',authors:['Dong Z.','et al.'],corresponding:[],status:'preparation'},
     {title:'EEG-informed Distraction-aware Car-following Simulation of Mixed Human-driven and Automated Traffic',authors:['Dong Z.','Qi G.','Zheng S.-T.','Li J.','Xu H.','Jiang R.','Guan W.'],corresponding:[],status:'submitted'},
     {title:'EASTF-Net: EEG-Anchored Spectral–Temporal Fusion for Driver-State Recognition Across Manual and Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Jiang R.','Guan W.','He Z.'],corresponding:[1,4]},
     {title:'From Coarse Distraction Detection to Mode-Aware Driver-State Recognition: Multimodal Physiological Evidence from Real-World Manual and Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Jiang R.','Guan W.'],corresponding:[1,4]},
