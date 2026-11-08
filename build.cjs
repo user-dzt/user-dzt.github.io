@@ -6,8 +6,10 @@ global.window={};
 require(path.join(__dirname,'content.js'));
 const data=window.HOMEPAGE;
 const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Author names are "Surname Initials" (Dong Z.); commas only separate people.
+const isOwner=a=>a.replace(/,/g,'').replace(/\s+/g,' ').trim()==='Dong Z.';
 function authors(p){
-  return p.authors.map((a,i)=>(a==='Dong, Z.'?'<strong>'+escape(a)+'</strong>':escape(a))+((p.corresponding||[]).includes(i)?'<sup>†</sup>':'')).join(', ');
+  return p.authors.map((a,i)=>(isOwner(a)?'<strong>'+escape(a)+'</strong>':escape(a))+((p.corresponding||[]).includes(i)?'<sup>†</sup>':'')).join(', ');
 }
 // Papers without a DOI may give a plain url instead.
 const paperLink=p=>p.doi?'https://doi.org/'+p.doi:(p.url||'');
