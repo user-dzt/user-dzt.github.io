@@ -49,10 +49,10 @@ window.HOMEPAGE = {
     }
   },
   underReview: [
-    {title:'Drift-aware few-shot EEG calibration for cognitive distraction detection after the transition to automated driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Xu H.','Jiang R.','Guan W.','Li J.'],corresponding:[],status:'submitted'},
+    {title:'Drift-aware few-shot EEG calibration for cognitive distraction detection after the transition to automated driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Xu H.','Jiang R.','Guan W.','Li J.'],corresponding:[1,5],status:'submitted'},
     {title:'Islands in the sky: corridor buffers, percolation and crossing gates in China’s permission-free drone airspace',authors:['Dong Z.','et al.'],corresponding:[],status:'preparation'},
     {title:'Mobility-based predictions overestimate road crashes when vehicle use falls and underestimate them when travel risk rises',authors:['Dong Z.','et al.'],corresponding:[],status:'preparation'},
-    {title:'EEG-informed Distraction-aware Car-following Simulation of Mixed Human-driven and Automated Traffic',authors:['Dong Z.','Qi G.','Zheng S.-T.','Li J.','Xu H.','Jiang R.','Guan W.'],corresponding:[],status:'submitted'},
+    {title:'EEG-informed Distraction-aware Car-following Simulation of Mixed Human-driven and Automated Traffic',authors:['Dong Z.','Qi G.','Zheng S.-T.','Li J.','Xu H.','Jiang R.','Guan W.'],corresponding:[1],status:'submitted'},
     {title:'EASTF-Net: EEG-Anchored Spectral–Temporal Fusion for Driver-State Recognition Across Manual and Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Jiang R.','Guan W.','He Z.'],corresponding:[1,4]},
     {title:'From Coarse Distraction Detection to Mode-Aware Driver-State Recognition: Multimodal Physiological Evidence from Real-World Manual and Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Jiang R.','Guan W.'],corresponding:[1,4]},
     {title:'Toward Reliable Car-Following Behavior Prediction: EEG-Enhanced Uncertainty Quantification',authors:['Dong Z.','Qi G.','Hao Y.','Zhao S.','Guan W.','He Z.'],corresponding:[1,4]}
