@@ -31,7 +31,7 @@ window.HOMEPAGE = {
       experimentTitle:'On-road driving experiment &amp; multimodal dataset',
       experimentText:'<ul><li>Designed and conducted a real-vehicle car-following experiment involving <strong>43 drivers</strong>, covering manual driving and automated assistance.</li><li>Collected multimodal physiological and behavioral data, including EEG, EMG, ECG, PPG, eye tracking, video, and driving records.</li><li>Carried out data processing, dataset preparation, and driving behavior prediction modeling.</li></ul>',
       newsTitle:'🔥 News',
-      news:'<li><em>2026-11: </em>I received the Best Student Poster award in Advancing Automotive Engineering 2026 held by Institution of Mechanical Engineers. </li><li><em>2026-09</em>: A first-author paper was accepted by the 106th Transportation Research Board Annual Meeting.</li><li><em>2026-06</em>: A first-author paper on context-aware driver distraction recognition was accepted by <strong>Expert Systems with Applications</strong>.</li>',
+      news:'<li><em>2026-11: </em>I received the Best Student Poster award in Advancing Automotive Engineering 2026 held by <strong>Institution of Mechanical Engineers</strong>. </li><li><em>2026-09</em>: A first-author paper was accepted by the 106th <strong>Transportation Research Board Annual Meeting</strong>.</li><li><em>2026-06</em>: A first-author paper on context-aware driver distraction recognition was accepted by <strong>Expert Systems with Applications</strong>.</li>',
       publicationsTitle:'📝 Selected Publications',
       publicationNote:'† denotes corresponding author',
       fullListButton:'📚 Full Publication List',
@@ -43,7 +43,7 @@ window.HOMEPAGE = {
       internTitle:'💻 Internships',
       internText:'<strong><a href="https://www.tyjt-ai.com/" target="_blank" rel="noopener noreferrer">Tianyi Transportation Technology (天翼交通科技有限公司)</a></strong><br>Autonomous Driving Algorithm Intern',
       serviceTitle:'🖋️ Service',
-      serviceText:'<ul class="service-list"><li>Journal Reviewer:<ul><li><a href="https://ieee-itss.org/pub/t-iv/" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Vehicles (T-IV)</a></li><li><a href="https://ieee-itss.org/pub/oj-its/" target="_blank" rel="noopener noreferrer">IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS)</a></li><li>IEEE Transactions on Human-Machine Systems (THMS)</li></ul></li></ul>',
+      serviceText:'<ul class="service-list"><li>Journal Reviewer:<ul><li><a href="https://ieee-itss.org/pub/t-iv/" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Vehicles (T-IV)</a></li><li><a href="https://ieee-itss.org/pub/oj-its/" target="_blank" rel="noopener noreferrer">IEEE Open Journal of Intelligent Transportation Systems (OJ-ITS)</a></li><li><a href="https://xplorestaging.ieee.org/xpl/RecentIssue.jsp?punumber=6221037" target="_blank" rel="noopener noreferrer">IEEE Transactions on Human-Machine Systems (THMS)</a></li></ul></li></ul>',
       backTop:'Back to top ↑',
       preparationTitle:'In Preparation'
     }
