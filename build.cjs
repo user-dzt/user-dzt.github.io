@@ -18,14 +18,22 @@ function cover(p){
   const lines=p.coverLines.map((line,i)=>'<text x="27" y="'+(92+i*34)+'" font-family="Arial,sans-serif" font-size="25" fill="#34485f">'+escape(line)+'</text>').join('');
   return '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240"><title>Typographic cover: '+escape(p.title)+'</title><rect width="400" height="240" fill="#fff"/><rect x="0.5" y="0.5" width="399" height="239" fill="none" stroke="#d9e1e8"/><path d="M27 52h346" stroke="#c5ced8"/>'+lines+'<text x="27" y="213" font-family="Arial,sans-serif" font-size="12" fill="#7c8794">'+escape(p.short+' · '+p.year+' · Zhentao Dong')+'</text></svg>';
 }
+// Journal metrics after a published paper: JCR quartile and impact factor, or EI for Chinese EI journals.
+function indexing(p){
+  const parts=[];
+  if(p.jcr)parts.push('JCR '+p.jcr);
+  if(p.impactFactor)parts.push('IF '+p.impactFactor);
+  if(p.ei)parts.push('EI Indexed');
+  return parts.length?' <span class="pub-index">'+escape(parts.join(' · '))+'</span>':'';
+}
 function selected(p){
   const link=paperLink(p);
-  return '<article class="paper-box"><div class="paper-image"><div><div class="badge">'+escape(p.short+' '+p.year)+'</div><img src="'+escape(p.cover)+'" alt="'+(hasTextCover(p)?'Typographic cover: ':'Figure: ')+escape(p.title)+'" width="280" height="168" loading="lazy"></div></div><div class="paper-text"><ul><li class="authors">'+authors(p)+'</li><li>'+escape(p.title)+' (<em>'+escape(p.journal)+'</em>, '+escape(p.year)+')</li>'+(link?'<li><a href="'+escape(link)+'" target="_blank" rel="noopener noreferrer">[paper]</a></li>':'')+'</ul></div></article>';
+  return '<article class="paper-box"><div class="paper-image"><div><div class="badge">'+escape(p.short+' '+p.year)+'</div><img src="'+escape(p.cover)+'" alt="'+(hasTextCover(p)?'Typographic cover: ':'Figure: ')+escape(p.title)+'" width="280" height="168" loading="lazy"></div></div><div class="paper-text"><ul><li class="authors">'+authors(p)+'</li><li>'+escape(p.title)+' (<em>'+escape(p.journal)+'</em>, '+escape(p.year)+')'+indexing(p)+'</li>'+(link?'<li><a href="'+escape(link)+'" target="_blank" rel="noopener noreferrer">[paper]</a></li>':'')+'</ul></div></article>';
 }
 function listed(p){
   const link=paperLink(p);
   const title=link?'<a href="'+escape(link)+'" target="_blank" rel="noopener noreferrer">'+escape(p.title)+'</a>':escape(p.title);
-  return '<li>'+authors(p)+', '+title+' <em>'+escape(p.journal)+'</em>, '+(p.details?escape(p.details)+', ':'')+escape(p.year)+(p.chinese?' [In Chinese]':'')+'.</li>';
+  return '<li>'+authors(p)+', '+title+' <em>'+escape(p.journal)+'</em>, '+(p.details?escape(p.details)+', ':'')+escape(p.year)+(p.chinese?' [In Chinese]':'')+'.'+indexing(p)+'</li>';
 }
 const selectedHTML=data.publications.filter(p=>p.selected).map(p=>{if(hasTextCover(p))fs.writeFileSync(path.join(__dirname,p.cover),cover(p),'utf8');return selected(p)}).join('\n');
 const years=[...new Set(data.publications.map(p=>p.year))].sort().reverse();
