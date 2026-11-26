@@ -52,7 +52,7 @@ window.HOMEPAGE = {
     {title:'Adaptive cruise control lowers baseline heart rate and lane-keeping precision, opposite to cognitive load',authors:['Dong Z.','Qi G.','Zheng S.-T.','Xu H.','Jiang R.','Guan W.','Li J.'],status:'submitted',corresponding:[1,6]},
     {title:'Drift-Aware Few-Shot Calibration of Spatiotemporal EEG Streams for Monitoring Cognitive Distraction in Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Xu H.','Jiang R.','Guan W.','Li J.'],corresponding:[1,5],status:'submitted'},
     {title:'Islands in the sky: corridor buffers, percolation and crossing gates in China’s permission-free drone airspace',authors:['Dong Z.','Hao Y.','Qi G.','Guan W.','Zhu T.','et al.'],corresponding:[4],status:'preparation'},
-    {title:'Road crashes depart from mobility-based predictions during the Spring Festival and in rain',authors:['Dong Z.','Qi G.','Ma J.','Guan W.'],corresponding:[1],status:'preparation'},
+    {title:'Road crashes depart from mobility-based predictions during the Spring Festival and in rain',authors:['Dong Z.','Qi G.','Ma J.','Guan W.'],corresponding:[1],status:'submitted'},
     {title:'EEG-informed Distraction-aware Car-following Simulation of Mixed Human-driven and Automated Traffic',authors:['Dong Z.','Qi G.','Zheng S.-T.','Li J.','Xu H.','Jiang R.','Guan W.'],corresponding:[1]},
     {title:'EAPF-Net: EEG-Anchored Physiological Fusion with Feature-Wise Modulation for Driver-State Recognition Across Manual and Automated Driving',authors:['Dong Z.','Qi G.','Zheng S.-T.','Jiang R.','Guan W.','He Z.'],corresponding:[1,4]}
   ],
